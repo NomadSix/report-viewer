@@ -1,0 +1,90 @@
+/* NG-Cloak keeps the unevaluated expressions from being rendered */
+[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak {
+	display: none !important;
+}
+
+/* "hamburger menu" button (wrapper)*/
+.menu {
+	background-color: transparent;
+	top: 8px;
+	border: none;
+	margin-left: 35px;
+	margin-top: 17px;
+}
+
+.Card1 {
+	width:100%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.Card2 {
+	width:45%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.Card3 {
+	width: 30%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.Card4 {
+	width:20%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+/* Main 'app title' text */
+md-toolbar h3 {
+	margin-left: 35px;
+	font-weight: 500;
+}
+
+/* Ensures that buttons span the entire menu panel, not just the length of the text */
+md-list-item > button {
+	width: 100%;
+	text-align: left !important;
+	height: 70px;
+}
+
+/* Spacing between 'avatar' icons and page titles */
+md-icon.avatar {
+	margin-right: 20px;
+}
+
+/* Text colour for the selected page's menu item */
+md-list .md-button.selected {
+	color: #03a9f4;
+}
+
+/* Toolbar area geometry (in the sidenav bar) */
+md-sidenav > md-toolbar {
+	height: 75px;
+}
+
+md-list-item {
+	overflow: hidden;
+}
+
+/* Primary content area geometry*/
+#content {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 5px;
+}
+
+/* Navbar avatars geometry */
+.icon {
+	position: relative;
+	width: 20px;
+	height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	margin-right: 10px;
+	vertical-align: middle;
+}

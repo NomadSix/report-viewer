@@ -1,0 +1,25 @@
+{
+  "name": "stempact-ui",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Make simple tasks difficult with just a few [million] lines of JavaScript!",
+  "main": "app/app.js",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-animate": "^1.4.9",
+    "angular-aria": "^1.4.9",
+    "angular-material": "^1.0.0",
+    "angular-material-icons": "^0.7.0",
+    "angular-messages": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "electron-prebuilt": "^0.37.3",
+    "mysql": "^2.10.2",
+    "ng-material-floating-button": "^0.6.2"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.9"
+  },
+  "scripts": {
+    "start": "electron main.js"
+  }
+}

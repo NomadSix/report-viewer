@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>StemPact2020 - Reports Viewer</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+	<link rel="stylesheet" href="../node_modules/angular-material/angular-material.css" />
+	<link rel="stylesheet" href="app.css" />
+</head>
+
+<body ng-app="reportsApp" layout="row" ng-controller="PartialsController" ng-cloak>
+
+	<md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z2" md-component-id="left" ng-click="toggleList()" aria-label="Show User List" md-is-locked-open="$mdMedia('gt-sm')">
+
+		<!--SideNav Titlebar-->
+		<md-toolbar class="md-whiteframe-z1">
+			<h3>StemPact 2020</h3>
+		</md-toolbar>
+
+		<!--Menu Bits-->
+		<md-list>
+			<md-list-item ng-repeat="it in pages">
+				<md-button ng-click="go(it)" ng-class="{'selected' : it === selected }">
+					<div class="icon"></div>
+					{{it.title}}
+				</md-button>
+			</md-list-item>
+		</md-list>
+
+	</md-sidenav>
+
+
+	<div flex layout="column" tabIndex="-1" role="main" class="md-whiteframe-z2">
+		<!--Le Toolbar-->
+		<md-toolbar layout="row" class="md-whiteframe-z1">
+			<div class=menu>
+				<md-button id="main" class="md-icon-button" hide-gt-sm ng-click="toggleList()" aria-label="Show User List">
+					<ng-md-icon icon="menu" style=fill:white></ng-md-icon>
+				</md-button>
+			</div>
+			<h3>Reports Viewer</h3>
+		</md-toolbar>
+
+		<!--Routing Fragments-->
+		<md-content flex id="content">
+			<div ng-view></div>
+		</md-content>
+	</div>
+	
+	<!--Angular Dependencies-->
+	<script src="../node_modules/angular/angular.js"></script>
+	<script src="../node_modules/angular-animate/angular-animate.js"></script>
+	<script src="../node_modules/angular-aria/angular-aria.js"></script>
+	<script src="../node_modules/angular-route/angular-route.js"></script>
+	<script src="../node_modules/angular-material/angular-material.js"></script>
+	<script src="../node_modules/angular-material-icons/angular-material-icons.js"></script>
+
+	<!--Custom AngularJS bits n' pieces-->
+	<script src="app.js"></script>
+	<script src="partials/controllers.js"></script>
+</body>
+
+</html>

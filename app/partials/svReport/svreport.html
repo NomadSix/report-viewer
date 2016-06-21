@@ -1,0 +1,81 @@
+<div class='md-padding' layout="row" layout-wrap>
+  <md-card class=Card3>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Hours</span>
+        <span class="md-subhead">Logged by students</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p class=md-display-2>{{studenthoursLT+studenthoursOT}}</p>
+    </md-card-content>
+  </md-card>
+  <md-card class=Card3>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Hours</span>
+        <span class="md-subhead">Logged by volunteers</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p class=md-display-2>{{volunteerhoursLT+volunteerhoursOT}}</p>
+    </md-card-content>
+  </md-card>
+  <md-card class=Card3>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Hours</span>
+        <span class="md-subhead">Logged by voluteers and students</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p class=md-display-2>{{volunteerhoursLT+volunteerhoursOT+studenthoursLT+volunteerhoursOT}}</p>
+    </md-card-content>
+  </md-card>
+
+
+  <md-card class=Card2>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Long term</span>
+        <span class="md-subhead">Hours from students</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p class=md-display-2>{{studenthoursLT}}</p>
+    </md-card-content>
+  </md-card>
+  <md-card class=Card2>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">One time</span>
+        <span class="md-subhead">Hours from students</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p class=md-display-2>{{studenthoursOT}}</p>
+    </md-card-content>
+  </md-card>
+  <md-card class=Card2>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Long term</span>
+        <span class="md-subhead">Hours from volunteers</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p class=md-display-2>{{volunteerhoursLT}}</p>
+    </md-card-content>
+  </md-card>
+  <md-card class=Card2>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">One time</span>
+        <span class="md-subhead">Hours from volunteers</span>
+      </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+      <p class=md-display-2>{{volunteerhoursOT}}</p>
+    </md-card-content>
+  </md-card>
+</div>
